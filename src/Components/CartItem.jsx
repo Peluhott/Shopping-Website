@@ -31,11 +31,11 @@ useEffect(() => {
             <img className="icon"></img>
             <p className="item-name"></p>
             <p className="item-price"></p>
-            <button onClick={decrement}>-</button>
+            <button onClick={Decrement}>-</button>
             <p className="item-quantity">{quantity}</p>
-            <button onClick={increment}>+</button>
+            <button onClick={Increment}>+</button>
             <p className="item-total">{total}</p>
-            <button onClick={onRemoveFromCar(product.id)}>Remove</button>
+            <button onClick={onRemoveFromCart(product.id)}>Remove</button>
 
         </div>
     )
