@@ -2,6 +2,7 @@ import React, { useState} from 'react'
 
 
 function CartItem({product, onRemoveFromCart}){
+    
 
 const [quantity, setQuantity] = useState(1)
 const [total, setTotal] = useState({product.price})
