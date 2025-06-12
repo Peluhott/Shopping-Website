@@ -1,0 +1,55 @@
+{
+    "inventory": [
+        {
+            "id": "1",
+            "name": "First",
+            "description": "First Product in product line",
+            "short-description": "red",
+            "price": 100.00,
+            "image": "placeholder.jpeg",
+            "imageOnHover": "placeholder.jpeg"
+
+        }
+        , {
+            "id": "2",
+            "name": "Second",
+            "description": "Second product in product line",
+            "short-description": "blue",
+            "price": 200.00,
+            "image": "/placeholder.jpeg",
+            "imageOnHover": "/placeholder.jpeg"
+
+        }
+        , {
+            "id": "3",
+            "name": "Third",
+            "description": "Third Product in product line",
+            "short-description": "green",
+            "price": 300.00,
+            "image": "/placeholder.jpeg",
+            "imageOnHover": "/placeholder.jpeg"
+
+        }
+        ,{
+            "id": "4",
+            "name": "fourth",
+            "description": "Fourth Product in product line",
+            "short-description": "yellow",
+            "price": 400.00,
+            "image": "/placeholder.jpeg",
+            "imageOnHover": "/placeholder.jpeg"
+
+        }
+        ,{
+            "id": "5",
+            "name": "fifth",
+            "description": "fifth Product in product line",
+            "short-description": "white",
+            "price": 500.00,
+            "image": "/placeholder.jpeg",
+            "imageOnHover": "/placeholder.jpeg"
+
+        }
+     
+    ]
+}

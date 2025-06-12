@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './App.css'
+import Cart from 'Cart'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [cart, setCart] = useState([])
 
   return (
     <>
@@ -15,7 +16,7 @@ function App() {
 
         <div>logo goes here</div>
 
-        <button className='Checkout'>
+        <button className={cart.length > 0 ? 'Checkout active' : 'Checkout'}>
           <Link to='/ShoppingCart'>Logo to Cart</Link>
         </button>
 

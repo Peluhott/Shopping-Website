@@ -6,7 +6,7 @@ const handleClick = () => {
 
     return (
         <div className="item">
-            <img className="item-image">{product.img}</img>
+            <img className="item-image">{product.image}</img>
             <p className="item-name">{product.name}</p>
             <p className="item-price">{product.price}</p>
             <button onClick={handleClick}>ADD TO CART</button>
