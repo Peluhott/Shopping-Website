@@ -1,19 +1,20 @@
-function Home(){
+import { Link } from 'react-router-dom'
+import React from 'react'
+import './Home.css';
 
+function Home() {
     return (
-        <div className="Home-content">
-            
+        <div className="home-content">
             <div className="mvp-content">
                 <div className="image-container">
-                    <img src="/placeholder.jpeg"/>
+                    <img src="/placeholder.jpeg" alt="placeholder" />
                 </div>
                 <div className="mvp-text">
                     <h1>Some text right here talking about the value it will bring</h1>
                     <p>Short description on what it is</p>
                     <Link to='/products'>
-                    <button>Shop Now</button>
+                        <button>Shop Now</button>
                     </Link>
-                    
                 </div>
             </div>
 
@@ -24,27 +25,25 @@ function Home(){
             <div className="featured">
                 <p>Featured Products</p>
                 <div className="featured-products">
-                    
                     <div className="product-cards">
-                        <img src="/placeholder.pjeg"/>
-                        <p>Name of product</p>
-                        
-                    </div>
-                    
-                    <div className="product-cards">
-                        <img src="/placeholder.pjeg"/>
+                        <img src="/placeholder.jpeg" alt="product" />
                         <p>Name of product</p>
                     </div>
-                    
+
                     <div className="product-cards">
-                    <img src="/placeholder.pjeg"/>
-                    <p>name of product</p>
+                        <img src="/placeholder.jpeg" alt="product" />
+                        <p>Name of product</p>
+                    </div>
+
+                    <div className="product-cards">
+                        <img src="/placeholder.jpeg" alt="product" />
+                        <p>name of product</p>
                     </div>
                 </div>
             </div>
 
             <div className="about">
-                <img>Picture</img> 
+                <img src="/placeholder.jpeg" alt="about" />
                 <p>Some Bs quote about purpose</p>
             </div>
 
@@ -57,3 +56,5 @@ function Home(){
         </div>
     )
 }
+
+export default Home

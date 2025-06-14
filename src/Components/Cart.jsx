@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react'
+import './Cart.css';
 
 function Cart(){
 
     const [cart, setCart] = useState([])
     const [subtotal, setSubtotal] = useState(0)
      
-    const addToCart = (product) => {
+    const onAddToCart = (product) => {
         setCart(prev => [...prev, product]);
         
     } 
@@ -20,8 +21,8 @@ function Cart(){
     }, [cart])
 
     return(
-        <div>
-            <div>
+        <div className='cart'>
+            <div className='cart-header'>
                 <p>Item</p>
                 <p>Price</p>
                 <p>Quantity</p>

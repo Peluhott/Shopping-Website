@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './CartItem.css';
 
 
 function CartItem({ product, onRemoveFromCart }) {
@@ -28,16 +29,19 @@ function CartItem({ product, onRemoveFromCart }) {
 
 
     return (
-        <div>
+        <div className='cart-row'>
             <img className="icon"></img>
             <p className="item-name"></p>
             <p className="item-price"></p>
-            <button onClick={Decrement}>-</button>
-            <p className="item-quantity">{quantity}</p>
-            <button onClick={Increment}>+</button>
+            <div className='quantity-control'>
+                <button onClick={Decrement}>-</button>
+                <p className="item-quantity">{quantity}</p>
+                <button onClick={Increment}>+</button>
+            </div>
             <p className="item-total">{total}</p>
             <button onClick={onRemoveFromCart(product.id)}>Remove</button>
 
         </div>
     )
 }
+export default CartItem;

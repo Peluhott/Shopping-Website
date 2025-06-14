@@ -1,20 +1,21 @@
 import React from 'react'
-import productsData from './data/products.json'
-import Item from 'Item.jsx'
+import Item from '../Components/Item'
+import productsData from '../Data/products.json'
 
-function Products(){
+function Products() {
     return (
         <>
-        <div className='banner'>
-            banner content will go here
-        </div>
+            <div className='banner'>
+                banner content will go here
+            </div>
 
-        <div className='product-container'>
-            {productsData.inventory.map((individualItem) => (<Item key={individualItem.id} product={individualItem}/>))}
-
-        </div>
-        
+            <div className='product-container'>
+                {productsData.inventory.map((individualItem) => (
+                    <Item key={individualItem.id} product={individualItem} />
+                ))}
+            </div>
         </>
-        
     );
 }
+
+export default Products

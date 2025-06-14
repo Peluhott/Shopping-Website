@@ -1,0 +1,13 @@
+.home-content {
+    display: flex;
+    flex-direction: column;
+    
+}
+.mvp-content {
+    display: flex;
+}
+
+.featured-products {
+    display: flex;
+}
+

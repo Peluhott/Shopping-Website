@@ -1,3 +1,7 @@
+import './Item.css';
+import Cart from './Cart'
+
+
 function Item({ product, onAddToCart }) {
 
     const handleClick = () => {
