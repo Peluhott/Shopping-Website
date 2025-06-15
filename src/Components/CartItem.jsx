@@ -34,8 +34,12 @@ function CartItem({ product, onRemoveFromCart, updateItemInCart }) {
                 <p className="item-quantity">{quantity}</p>
                 <button onClick={Increment}>+</button>
             </div>
-            <p className="item-total">${total}</p>
+            
+            
+                <p className="item-total">${total}</p>
             <button onClick={() => onRemoveFromCart(product.id)}>Remove</button>
+            
+            
         </div>
     );
 }

@@ -1,17 +1,20 @@
 import React from 'react'
 import Cart from '../Components/Cart'
+import './ShoppingCart.css'
 
 function ShoppingCart({ cart, removeFromCart, subtotal, updateItemInCart }) {
     return (
-        <>
-            <p>Shopping Cart</p>
+        <div className='shop-content'>
+            
+                
+                
             <Cart
                 cart={cart}
                 removeFromCart={removeFromCart}
                 subtotal={subtotal}
                 updateItemInCart={updateItemInCart}
             />
-        </>
+        </div>
     )
 }
 

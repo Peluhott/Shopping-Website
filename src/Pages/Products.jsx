@@ -1,6 +1,7 @@
 import React from 'react'
 import Item from '../Components/Item'
 import productsData from '../Data/products.json'
+import './Products.css'
 
 function Products({onAddToCart}) {
     return (
