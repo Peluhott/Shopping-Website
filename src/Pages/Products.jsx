@@ -2,7 +2,7 @@ import React from 'react'
 import Item from '../Components/Item'
 import productsData from '../Data/products.json'
 
-function Products() {
+function Products({onAddToCart}) {
     return (
         <>
             <div className='banner'>
@@ -11,7 +11,7 @@ function Products() {
 
             <div className='product-container'>
                 {productsData.inventory.map((individualItem) => (
-                    <Item key={individualItem.id} product={individualItem} />
+                    <Item key={individualItem.id} product={individualItem} onAddToCart={onAddToCart} />
                 ))}
             </div>
         </>

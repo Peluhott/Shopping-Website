@@ -1,26 +1,11 @@
-import React, {useState, useEffect} from 'react'
 import './Cart.css';
+import CartItem from './CartItem'
 
-function Cart(){
+function Cart({ cart, subtotal, removeFromCart, updateItemInCart }) {
 
-    const [cart, setCart] = useState([])
-    const [subtotal, setSubtotal] = useState(0)
-     
-    const onAddToCart = (product) => {
-        setCart(prev => [...prev, product]);
-        
-    } 
 
-    const removeFromCart = (idToRemove) => {
-        setCart( prev => prev.filter(item => item.id !== idToRemove));
-    }
 
-    useEffect(() => {
-        let value = cart.reduce((total, item) => total + item.price, 0)
-        setSubtotal(value)
-    }, [cart])
-
-    return(
+    return (
         <div className='cart'>
             <div className='cart-header'>
                 <p>Item</p>
@@ -29,21 +14,22 @@ function Cart(){
                 <p>Total</p>
             </div>
             {cart.length === 0 ? (
-                <p>Your Cart is Empty</p> 
+                <p>Your Cart is Empty</p>
             ) : (
-            <>
-                {cart.map(product => (
-                <CartItem
-                key={product.id}
-                product={product}
-                onRemoveFromCart={removeFromCart}
-                />
-            ))}
-            <p>Subtotal is {subtotal}</p>
-             </>
+                <>
+                    {cart.map(product => (
+                        <CartItem
+                            key={product.id}
+                            product={product}
+                            onRemoveFromCart={removeFromCart}
+                            updateItemInCart={updateItemInCart}
+                        />
+                    ))}
+                    <p>Subtotal is ${subtotal.toFixed(2)}</p>
+                </>
             )
             }
-        
+
         </div>
     );
 }

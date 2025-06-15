@@ -1,11 +1,16 @@
 import React from 'react'
 import Cart from '../Components/Cart'
 
-function ShoppingCart() {
+function ShoppingCart({ cart, removeFromCart, subtotal, updateItemInCart }) {
     return (
         <>
             <p>Shopping Cart</p>
-            <Cart />
+            <Cart
+                cart={cart}
+                removeFromCart={removeFromCart}
+                subtotal={subtotal}
+                updateItemInCart={updateItemInCart}
+            />
         </>
     )
 }
