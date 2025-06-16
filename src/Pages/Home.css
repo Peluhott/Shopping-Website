@@ -10,11 +10,34 @@
     gap: 2rem;
 }
 .about {
-    
+    background-image: url('freeBanner.jpeg');
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.about p {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    max-width: 600px;
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  }
 
 .featured-products {
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    
     gap: 1rem;
     padding: 0 1rem;
 }
@@ -35,4 +58,51 @@
     height: 300px;
     width: auto;
     object-fit: cover;
+}
+
+.hero-pic {
+    height: 350px;
+    width: auto;
+}
+
+.perks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.perk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.perk-icon {
+    height: 4rem;
+    width: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-form input {
+    background-color: white;
+    border: black 1px;
 }
