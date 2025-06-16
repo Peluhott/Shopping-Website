@@ -32,13 +32,30 @@
     font-weight: 500;
 }
 
-.Checkout {
-    padding: 0.5rem 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
+
+
+.logo-nav {
+    height: 60px;
+    width: auto;
 }
 
-.Checkout.active {
-    color: #007bff;
+.cart-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.cart-button:hover {
+    transform: scale(1.1);
+}
+
+
+
+.cart-button img {
+    width: 30px;
+    /* adjust size as needed */
+    height: auto;
 }

@@ -2,47 +2,47 @@
     "inventory": [
         {
             "id": "1",
-            "name": "First",
+            "name": "VeloRush",
             "description": "First Product in product line",
             "short-description": "red",
             "price": 100.00,
-            "image": "/placeholder.jpeg",
+            "image": "/A1.png",
             "imageOnHover": "/placeholder.jpeg"
         },
         {
             "id": "2",
-            "name": "Second",
+            "name": "StrideX",
             "description": "Second product in product line",
             "short-description": "blue",
             "price": 200.00,
-            "image": "/placeholder.jpeg",
+            "image": "/A2.png",
             "imageOnHover": "/placeholder.jpeg"
         },
         {
             "id": "3",
-            "name": "Third",
+            "name": "JetLine",
             "description": "Third Product in product line",
             "short-description": "green",
             "price": 300.00,
-            "image": "/placeholder.jpeg",
+            "image": "/A3.png",
             "imageOnHover": "/placeholder.jpeg"
         },
         {
             "id": "4",
-            "name": "fourth",
+            "name": "PulseRider",
             "description": "Fourth Product in product line",
             "short-description": "yellow",
             "price": 400.00,
-            "image": "/placeholder.jpeg",
+            "image": "/A4.png",
             "imageOnHover": "/placeholder.jpeg"
         },
         {
             "id": "5",
-            "name": "fifth",
+            "name": "Cyclone",
             "description": "fifth Product in product line",
             "short-description": "white",
             "price": 500.00,
-            "image": "/placeholder.jpeg",
+            "image": "/A5.png",
             "imageOnHover": "/placeholder.jpeg"
         }
     ]

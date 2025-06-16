@@ -6,9 +6,33 @@
 }
 .mvp-content {
     display: flex;
+    padding: 2rem 2rem;
+    gap: 2rem;
+}
+.about {
+    
 }
 
 .featured-products {
     display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
 }
-
+.featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.featured-pic {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+}

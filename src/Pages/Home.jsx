@@ -6,12 +6,12 @@ function Home() {
     return (
         <div className="home-content">
             <div className="mvp-content">
-                <div className="image-container">
-                    <img src="/placeholder.jpeg" alt="placeholder" />
-                </div>
+                <div className='mpv-image'>
+                    <img src='placeholder.jpeg'/> 
+                    </div>
                 <div className="mvp-text">
-                    <h1>Some text right here talking about the value it will bring</h1>
-                    <p>Short description on what it is</p>
+                    <h1>Gear Up for New Adventures</h1>
+                    <p>Discover bikes that blend performance, comfort, and style. Built to last. Ready to ride.</p>
                     <Link to='/products'>
                         <button>Shop Now</button>
                     </Link>
@@ -26,18 +26,18 @@ function Home() {
                 <p>Featured Products</p>
                 <div className="featured-products">
                     <div className="product-cards">
-                        <img src="/placeholder.jpeg" alt="product" />
-                        <p>Name of product</p>
+                        <img className='featured-pic' src="/A2.png" alt="product" />
+                        <p>StrideX</p>
                     </div>
 
                     <div className="product-cards">
-                        <img src="/placeholder.jpeg" alt="product" />
-                        <p>Name of product</p>
+                        <img className='featured-pic'  src="/A4.png" alt="product" />
+                        <p>PulseRider</p>
                     </div>
 
                     <div className="product-cards">
-                        <img src="/placeholder.jpeg" alt="product" />
-                        <p>name of product</p>
+                        <img className='featured-pic' src="/A5.png" alt="product" />
+                        <p>Cyclone</p>
                     </div>
                 </div>
             </div>

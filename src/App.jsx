@@ -47,11 +47,17 @@ function App() {
           <Link to='/products'>Products</Link>
         </div>
 
-        <div>logo goes here</div>
+        <div><img className='logo-nav' src='logo.png' /></div>
 
-        <button className={cart.length > 0 ? 'Checkout active' : 'Checkout'}>
-          <Link to='/cart'>Logo to Cart</Link>
-        </button>
+        <div>
+          <button className="cart-button">
+            <Link to='/cart'>
+              <img className='cart-icon' src={cart.length > 0 ? 'redLogo.svg' : 'cartlogo.svg'} alt="cart" />
+            </Link>
+          </button>
+        </div>
+
+
 
       </nav>
 
