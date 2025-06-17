@@ -25,7 +25,11 @@ function Cart({ cart, subtotal, removeFromCart, updateItemInCart }) {
                             updateItemInCart={updateItemInCart}
                         />
                     ))}
-                    <p>Subtotal is ${subtotal.toFixed(2)}</p>
+                    <div className='subtotal-text'>
+                        <p>Subtotal is ${subtotal.toFixed(2)}</p>
+                    </div>
+                    
+                    <button>CheckOut</button>
                 </>
             )
             }

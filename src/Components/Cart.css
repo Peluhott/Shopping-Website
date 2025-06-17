@@ -31,3 +31,8 @@
     text-align: right;
     font-weight: bold;
 }
+
+.subtotal-text{
+    text-align:center;
+    font-size: 2rem;
+}

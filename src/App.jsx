@@ -12,7 +12,14 @@ function App() {
   const [subtotal, setSubtotal] = useState(0)
 
   const onAddToCart = (product) => {
-    setCart(prev => [...prev, product]);
+    setCart(prev => {
+      const alreadyInCart = prev.some(item => item.id === product.id);
+      if(alreadyInCart){
+        return prev;
+      } else {
+        return [...prev, product]
+      }
+    });
 
   }
 

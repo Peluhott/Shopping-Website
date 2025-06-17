@@ -52,12 +52,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    border-radius: 1rem;
     
 }
+
+
 .featured-pic {
     height: 300px;
     width: auto;
     object-fit: cover;
+    border-radius: 1rem;
 }
 
 .hero-pic {
@@ -105,4 +110,41 @@
 .sign-up-form input {
     background-color: white;
     border: black 1px;
+}
+
+.mvp-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px ){
+.mvp-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+    ;
+}
+
+.perks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 }
