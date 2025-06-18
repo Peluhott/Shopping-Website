@@ -21,3 +21,13 @@
     width: auto;
     height: 5rem;
 }
+
+@media (max-width:760px){
+    .cart-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+}
